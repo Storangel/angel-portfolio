@@ -19,7 +19,7 @@ export function FadeIn({ children, className, delay = 0 }: FadeInProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 16 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut", delay }}
       className={cn(className)}
