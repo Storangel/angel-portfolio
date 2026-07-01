@@ -9,7 +9,7 @@ export function getPersonJsonLd() {
     jobTitle: siteConfig.title,
     url: SITE_URL,
     email: siteConfig.email,
-    sameAs: [siteConfig.linkedIn],
+    sameAs: [siteConfig.linkedIn, siteConfig.github],
     knowsAbout: [
       "Digital Transformation",
       "Software Development",

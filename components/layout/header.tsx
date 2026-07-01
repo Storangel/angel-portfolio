@@ -32,7 +32,7 @@ export function Header() {
 
           <div className="ml-auto flex items-center gap-2">
             <Button asChild size="sm" className="hidden sm:inline-flex">
-              <Link href={site.cvPath} download>
+              <Link href={site.cvPath}>
                 <Download className="h-4 w-4" aria-hidden="true" />
                 Download CV
               </Link>
@@ -43,7 +43,7 @@ export function Header() {
               className="sm:hidden"
               aria-label="Download CV"
             >
-              <Link href={site.cvPath} download>
+              <Link href={site.cvPath}>
                 <Download className="h-4 w-4" />
               </Link>
             </Button>

@@ -46,7 +46,7 @@ export function MobileNav({ items, cvPath, siteName }: MobileNavProps) {
             onNavigate={() => setOpen(false)}
           />
           <Button asChild className="w-full">
-            <Link href={cvPath} download onClick={() => setOpen(false)}>
+            <Link href={cvPath} onClick={() => setOpen(false)}>
               <Download className="h-4 w-4" aria-hidden="true" />
               Download CV
             </Link>

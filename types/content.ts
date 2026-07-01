@@ -3,7 +3,10 @@ export interface SiteConfig {
   title: string;
   motto: string;
   email: string;
+  phone: string;
   linkedIn: string;
+  github: string;
+  location: string;
   cvPath: string;
   locale: string;
 }
@@ -45,4 +48,77 @@ export interface HeroContent {
   profileCard: HeroProfileCard;
   primaryCta: HeroCta;
   secondaryCta: HeroCta;
+}
+
+export interface HomepageFocusArea {
+  title: string;
+  description: string;
+}
+
+export interface HomepageSection {
+  overline?: string;
+  title: string;
+  description?: string;
+}
+
+export interface HomepageExperienceSnapshot {
+  company: string;
+  role: string;
+  period: string;
+  summary: string;
+  cvHref: string;
+  projectsHref: string;
+}
+
+export interface HomepageCta {
+  headline: string;
+  primaryCta: HeroCta;
+  secondaryCta: HeroCta;
+}
+
+export interface HomepageProjectPreview {
+  id: string;
+  name: string;
+  description: string;
+  technology: string;
+  slug: string;
+}
+
+export type ProjectCategory =
+  | "digital-transformation"
+  | "automation"
+  | "web-application"
+  | "infrastructure";
+
+export interface ProjectImage {
+  src: string;
+  alt: string;
+}
+
+export interface Project {
+  id: string;
+  slug: string;
+  name: string;
+  client: string;
+  sector: string;
+  period: string;
+  engagement: string;
+  summary: string;
+  challenge: string;
+  challengePoints: string[];
+  approach: string;
+  approachPoints: string[];
+  solution: string;
+  solutionPoints: string[];
+  impact: string;
+  impactItems: string[];
+  technologyStack: string[];
+  roles: string[];
+  futureVision: string;
+  mediaPlaceholders: string[];
+  featured: boolean;
+  category: ProjectCategory;
+  images: ProjectImage[];
+  technologyIds: string[];
+  experienceId?: string;
 }

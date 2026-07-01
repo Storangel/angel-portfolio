@@ -2,23 +2,26 @@ import type { HeroContent, SiteConfig } from "@/types/content";
 
 export const siteConfig: SiteConfig = {
   name: "Angel Yepez",
-  title: "IT Manager & Digital Transformation Specialist",
+  title: "IT Manager · Software Engineer · Digital Transformation",
   motto: "Building technology that businesses actually use.",
-  email: "hello@angelyepez.com",
-  linkedIn: "https://www.linkedin.com/in/angelyepez",
-  cvPath: "/cv/angel-yepez-cv.pdf",
+  email: "yepezangel86@gmail.com",
+  phone: "+34 601 311 208",
+  linkedIn: "https://www.linkedin.com/in/angel-yepez/",
+  github: "https://github.com/Storangel",
+  location: "Valencia, Spain",
+  cvPath: "/cv",
   locale: "en",
 };
 
 export const heroContent: HeroContent = {
-  overline: "IT Manager · Digital Transformation · Software Development",
-  headline: "Transforming business challenges into digital solutions.",
-  lead: "IT Manager and Software Developer focused on digital transformation, process automation and practical AI solutions for real business operations.",
+  overline: "IT Manager · Software Engineer · Digital Transformation",
+  headline: "Building technology that businesses actually use.",
+  lead: "IT leader and software engineer driving digital transformation in industrial environments — internal software, ERP integration, process automation, and IT infrastructure that teams adopt and rely on.",
   credibility: [
-    { label: "13+ years of experience", icon: "experience" },
-    { label: "Industrial IT", icon: "industrial" },
+    { label: "IT leadership", icon: "experience" },
+    { label: "Industrial operations", icon: "industrial" },
     { label: "ERP integration", icon: "erp" },
-    { label: "Business automation", icon: "automation" },
+    { label: "Process automation", icon: "automation" },
   ],
   profileCard: {
     initials: "AY",
@@ -26,13 +29,13 @@ export const heroContent: HeroContent = {
     title: siteConfig.title,
     roles: [
       "IT Manager",
+      "Software Engineer",
       "Digital Transformation",
-      "Software Development",
     ],
     focusAreas: [
-      { label: "Process Automation" },
+      { label: "Internal Software" },
       { label: "ERP Integration" },
-      { label: "Web Applications" },
+      { label: "Process Automation" },
     ],
   },
   primaryCta: {
@@ -42,6 +45,5 @@ export const heroContent: HeroContent = {
   secondaryCta: {
     label: "Download CV",
     href: siteConfig.cvPath,
-    download: true,
   },
 };

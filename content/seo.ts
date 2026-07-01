@@ -20,4 +20,10 @@ export const pageSeo: Record<string, PageSeo> = {
     description: defaultSeo.description,
     path: "/",
   },
+  projects: {
+    title: "Projects — Angel Yepez",
+    description:
+      "Portfolio of business solutions: digital transformation, automation, and software development for industrial and operational environments.",
+    path: "/projects",
+  },
 };

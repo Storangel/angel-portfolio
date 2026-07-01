@@ -45,8 +45,14 @@ export function Footer() {
               >
                 LinkedIn
               </Link>
+              <Link
+                href={`mailto:${site.email}`}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Contact
+              </Link>
               <Button asChild variant="ghost" size="sm">
-                <Link href={site.cvPath} download>
+                <Link href={site.cvPath}>
                   <Download className="h-4 w-4" aria-hidden="true" />
                   Download CV
                 </Link>
